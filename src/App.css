@@ -42,3 +42,6 @@ margin-left: 20px;
   background-color: #33263f;
   color: white;
 }
+.todos {
+  display: flex;
+}
