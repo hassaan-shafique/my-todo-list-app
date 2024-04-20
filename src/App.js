@@ -60,12 +60,20 @@ function App() {
                         <li key={index}>
                           <input type="checkbox" />
                           {todo}
-                          <button className="edit-add-btn" onClick={HandleEdit}>
-                            Edit
-                          </button>
-                          <button className="delete-add-btn" onClick={HandleDelete}>
-                            Delete
-                          </button>
+                          <div className='btn-div'>
+                            <button
+                              className="edit-add-btn"
+                              onClick={HandleEdit}
+                            >
+                              Edit
+                            </button>
+                            <button
+                              className="delete-add-btn"
+                              onClick={HandleDelete}
+                            >
+                              Delete
+                            </button>
+                          </div>
                         </li>
                       );
                     })}
