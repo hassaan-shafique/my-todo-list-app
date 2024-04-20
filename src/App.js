@@ -16,10 +16,11 @@ function App() {
   }
 
   const HandleAdd = () => {
+    
   
    SetTodo([...todo,inputVal]);
    setInputVal('');
-   
+    
   }
   // const HandleChange = (e) => {
     
