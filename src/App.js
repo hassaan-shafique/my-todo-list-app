@@ -60,10 +60,10 @@ function App() {
                         <li key={index}>
                           <input type="checkbox" />
                           {todo}
-                          <button className="add-btn" onClick={HandleEdit}>
+                          <button className="edit-add-btn" onClick={HandleEdit}>
                             Edit
                           </button>
-                          <button className="add-btn" onClick={HandleDelete}>
+                          <button className="delete-add-btn" onClick={HandleDelete}>
                             Delete
                           </button>
                         </li>
