@@ -53,14 +53,14 @@ function App() {
             <div className="todos">
               <div className="tasks">
                 
-                <div>
+                <div >
                   <ul>
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
                           <input type="checkbox" />
                           {todo}
-                          <div className='btn-div'>
+                          
                             <button
                               className="edit-add-btn"
                               onClick={HandleEdit}
@@ -73,7 +73,7 @@ function App() {
                             >
                               Delete
                             </button>
-                          </div>
+                          
                         </li>
                       );
                     })}
