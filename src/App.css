@@ -44,4 +44,21 @@ margin-left: 20px;
 }
 .todos {
   display: flex;
+  width: 100vh;
+  height: 30vh;
+  background-color: #d5b1eb;
+  margin-left:20px;
+  border-radius: 8px;
+
+
+}
+.tasks{
+   margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+}
+.head{
+  position:absolute;
+  margin-bottom: 700px;
+  color:#d7bae8;
 }
