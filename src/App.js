@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { v4 as uuidv4 } from "uuid";
 import './App.css';
 
 function App() {
@@ -11,15 +12,18 @@ function App() {
 
   }
 
-  const HandleDelete =()=> {
+  const HandleDelete =(index)=> {
+   const updatedTodo = [...todo];
+   updatedTodo.splice(index, 1);
    
     
   }
 
   const HandleAdd = () => {
+   
     
   
-   SetTodo([...todo,inputVal]);
+   SetTodo([...todo,setInputVal]);
    setInputVal('');
     
   }
