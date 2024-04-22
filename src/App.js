@@ -58,8 +58,8 @@ function App() {
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
-                          <input type="checkbox" />
-                          {todo}
+                          <input  type="checkbox" />
+                          {todo} 
                           
                             <button
                               className="edit-add-btn"
