@@ -12,27 +12,21 @@ function App() {
 
   }
 
-  const HandleDelete =(index)=> {
-   const updatedTodo = [...todo];
-   updatedTodo.splice(index, 1);
+  const HandleDelete =()=> {
+   
    
     
   }
 
   const HandleAdd = () => {
-   
+    if(inputVal !== ''){
+      SetTodo([...todo, inputVal]);
+      setInputVal('');
+    }
     
-  
-   SetTodo([...todo,setInputVal]);
-   setInputVal('');
     
   }
-  // const HandleChange = (e) => {
-    
-    
-  //   setInputVal(e.target.value);
-
-  // }
+ 
  
   return (
     <>
@@ -53,19 +47,21 @@ function App() {
             </button>
           </div>
           <div>
-            <h2>Your Todos:</h2>
+            <h2 className='todos-head'>Your Todos:</h2>
 
-            <div className="todos">
+            <div
+              className="todos"
+              style={{ overflowY: "auto", maxHeight: "300px" }}
+            >
               <div className="tasks">
-                
-                <div >
+                <div>
                   <ul>
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
-                          <input  type="checkbox" />
-                          {todo} 
-                          
+                          <input type="checkbox" />
+                          {todo}
+                          <div className='todo-btns'>
                             <button
                               className="edit-add-btn"
                               onClick={HandleEdit}
@@ -78,15 +74,12 @@ function App() {
                             >
                               Delete
                             </button>
-                          
+                          </div>
                         </li>
                       );
                     })}
-
-                    
                   </ul>
                 </div>
-                
               </div>
             </div>
           </div>

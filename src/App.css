@@ -9,7 +9,7 @@ align-items: center;
 .main-div{
   background-color: white;
   width: 50%;
-  height: 50%;
+  height: 75%;
   border-radius: 5px;
   border: #8243a7 solid 2px;
   
@@ -20,7 +20,7 @@ align-items: center;
   margin-left: 10px;
 }
 .input-todo{
-   width: 90%;
+   width: 80%;
    height: 40px;
    border-radius: 6px;
    border: 1px black solid;
@@ -37,6 +37,9 @@ height: 35px;
 cursor: pointer;
 margin-left: 20px;
 
+}
+.todos-head{
+  margin-left: 20px;
 }
 .add-btn:hover {
   background-color: #33263f;
@@ -68,10 +71,15 @@ margin-left: 30px;
 .delete-add-btn:hover {
   background-color: red;
 }
+.todo-btns{
+  position: absolute;
+  margin-left: 300px;
+  margin-bottom: 430px;
+}
 .todos {
   display: flex;
   width: 100vh;
-  height: 30vh;
+  height: 60vh;
   background-color: #d5b1eb;
   margin-left:20px;
   border-radius: 8px;
@@ -85,7 +93,7 @@ margin-left: 30px;
 }
 .head{
   position:absolute;
-  margin-bottom: 700px;
+  margin-bottom: 600px;
   color:#d7bae8;
   
 }
