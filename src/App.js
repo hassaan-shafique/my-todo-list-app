@@ -60,14 +60,16 @@ function App() {
               <div className="tasks">
                 <div>
                   <ul>
+                    
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
                           <div className="flew">
-                            <input  className="check" type="checkbox" />
-                            <div className='inner-todo'>{todo}</div>
+                            
+                            <input className="check" type="checkbox" />
+                            <div className="inner-todo">{todo}</div>
 
-                            <div className='edit-delete-btn'>
+                            <div className="edit-delete-btn">
                               <button
                                 className="edit-add-btn"
                                 onClick={HandleEdit}
