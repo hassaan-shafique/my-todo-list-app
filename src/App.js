@@ -17,6 +17,10 @@ function App() {
    
     
   }
+  const handleClearAll = ()=>{
+    SetTodo([]);
+
+  }
 
   const HandleAdd = () => {
     if(inputVal !== ''){
@@ -82,7 +86,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <button className="clear-all">Clear All Todos</button>
+            <button className="clear-all" onClick={handleClearAll}>
+              Clear All Todos
+            </button>
+          </div>
+          <div class="remaining-text">
+            {todo.filter((todo) => !todo.completed).length} Remaining Task
           </div>
         </div>
       </div>
