@@ -47,7 +47,7 @@ function App() {
             </button>
           </div>
           <div>
-            <h2 className='todos-head'>Your Todos:</h2>
+            <h2 className="todos-head">Your Todos:</h2>
 
             <div
               className="todos"
@@ -61,7 +61,7 @@ function App() {
                         <li key={index}>
                           <input type="checkbox" />
                           {todo}
-                          <div className='todo-btns'>
+                          <div className="todo-btns">
                             <button
                               className="edit-add-btn"
                               onClick={HandleEdit}
@@ -82,6 +82,7 @@ function App() {
                 </div>
               </div>
             </div>
+            <button className="clear-all">Clear All Todos</button>
           </div>
         </div>
       </div>
