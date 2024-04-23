@@ -52,7 +52,9 @@ margin-left: 20px;
     width: 55px;
     height: 35px;
     cursor: pointer;
-    margin-left: 30px;
+    margin-left: 430px;
+    
+    
     
 }
 .edit-add-btn:hover{
@@ -67,6 +69,7 @@ width: 55px;
 height: 35px;
 cursor: pointer;
 margin-left: 30px;
+
 }
 .delete-add-btn:hover {
   background-color: red;
@@ -80,7 +83,7 @@ margin-left: 30px;
   display: flex;
   width: 100vh;
   height: 60vh;
-  background-color: #d5b1eb;
+  background-color: #8952ac;
   margin-left:20px;
   border-radius: 8px;
 
@@ -94,7 +97,7 @@ margin-left: 30px;
 .head{
   position:absolute;
   margin-bottom: 600px;
-  color:#d7bae8;
+  color:#c6b8ce;
   
 }
 .btn-div{
@@ -125,4 +128,21 @@ cursor: pointer;
 .remaining-text{
   margin-left: 410px;
   margin-top: 10px;
+}
+li {
+  width: 80vh;
+  height: 60px;
+  background-color: #c18be0;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-top: 5px;
+  
+
+
+}
+.flew{
+  display: flex;
+}
+.check{
+  margin-top: -8px;
 }

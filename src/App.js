@@ -63,21 +63,24 @@ function App() {
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
-                          <input type="checkbox" />
-                          {todo}
-                          <div className="todo-btns">
-                            <button
-                              className="edit-add-btn"
-                              onClick={HandleEdit}
-                            >
-                              Edit
-                            </button>
-                            <button
-                              className="delete-add-btn"
-                              onClick={HandleDelete}
-                            >
-                              Delete
-                            </button>
+                          <div className="flew">
+                            <input  className="check" type="checkbox" />
+                            <div>{todo}</div>
+                            
+                            <div>
+                              <button
+                                className="edit-add-btn"
+                                onClick={HandleEdit}
+                              >
+                                Edit
+                              </button>
+                              <button
+                                className="delete-add-btn"
+                                onClick={HandleDelete}
+                              >
+                                Delete
+                              </button>
+                            </div>
                           </div>
                         </li>
                       );
