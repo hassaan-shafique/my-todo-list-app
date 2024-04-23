@@ -52,10 +52,13 @@ margin-left: 20px;
     width: 55px;
     height: 35px;
     cursor: pointer;
-    margin-left: 430px;
+    /* margin-left: 430px; */
     
     
     
+}
+.edit-delete-btn{
+  margin-left: 8px;
 }
 .edit-add-btn:hover{
   background-color: rgb(77, 204, 61);
@@ -68,7 +71,7 @@ border: none;
 width: 55px;
 height: 35px;
 cursor: pointer;
-margin-left: 30px;
+margin-left: 20px;
 
 }
 .delete-add-btn:hover {
@@ -145,4 +148,13 @@ li {
 }
 .check{
   margin-top: -8px;
+}
+.inner-todo{
+  width: 60vh;
+  /* background-color: #dad3e0; */
+  /* text-overflow: inherit; */
+  word-break: break-all;
+  overflow: auto;
+  max-height: 55px;
+
 }

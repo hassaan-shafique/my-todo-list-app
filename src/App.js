@@ -65,9 +65,9 @@ function App() {
                         <li key={index}>
                           <div className="flew">
                             <input  className="check" type="checkbox" />
-                            <div>{todo}</div>
-                            
-                            <div>
+                            <div className='inner-todo'>{todo}</div>
+
+                            <div className='edit-delete-btn'>
                               <button
                                 className="edit-add-btn"
                                 onClick={HandleEdit}
