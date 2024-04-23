@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { v4 as uuidv4 } from "uuid";
 import './App.css';
 
+
 function App() {
   
   const[inputVal,setInputVal] =useState("");
@@ -13,8 +14,7 @@ function App() {
   }
 
   const HandleDelete =()=> {
-   
-   
+  
     
   }
   const handleClearAll = ()=>{
@@ -24,7 +24,7 @@ function App() {
 
   const HandleAdd = () => {
     if(inputVal !== ''){
-      SetTodo([...todo, inputVal]);
+      SetTodo([...todo,  inputVal]);
       setInputVal('');
     }
     
@@ -60,14 +60,14 @@ function App() {
               <div className="tasks">
                 <div>
                   <ul>
-                    
+                 
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
                           <div className="flew">
-                            
+                            <div> {index + 1}</div>
                             <input className="check" type="checkbox" />
-                            <div className="inner-todo">{todo}</div>
+                            <div className="inner-todo">{todo} </div>
 
                             <div className="edit-delete-btn">
                               <button
