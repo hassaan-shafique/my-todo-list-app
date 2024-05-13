@@ -8,7 +8,7 @@ align-items: center;
 }
 .main-div{
   background-color: white;
-  width: 50%;
+  width: 70%;
   height: 75%;
   border-radius: 5px;
   border: #8243a7 solid 2px;
@@ -59,6 +59,7 @@ margin-left: 20px;
 }
 .edit-delete-btn{
   margin-left: 8px;
+  display: flex;
 }
 .edit-add-btn:hover{
   background-color: rgb(77, 204, 61);
@@ -84,7 +85,7 @@ margin-left: 20px;
 }
 .todos {
   display: flex;
-  width: 100vh;
+  width: 110vh;
   height: 60vh;
   background-color: #8952ac;
   margin-left:20px;
@@ -96,6 +97,7 @@ margin-left: 20px;
    margin-left: 20px;
   margin-top: 10px;
   display: flex;
+ 
 }
 .head{
   position:absolute;
@@ -154,7 +156,7 @@ li {
   margin-top: -8px;
 }
 .inner-todo{
-  width: 90vh;
+  width: 190vh;
   /* background-color: #dad3e0; */
   /* text-overflow: inherit; */
   word-break: break-all;
