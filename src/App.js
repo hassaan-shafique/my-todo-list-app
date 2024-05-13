@@ -15,7 +15,7 @@ function App() {
   
 
   const HandleEdit =()=> {
-    
+
 
   }
 
@@ -40,7 +40,6 @@ function App() {
  
   return (
     <>
-    
       <div className="App">
         <h1 className="head"> To-Do List </h1>
         <div className="main-div">
@@ -67,13 +66,16 @@ function App() {
               <div className="tasks">
                 <div>
                   <ul>
-                 
                     {todo.map((todo, index) => {
                       return (
                         <li key={index}>
                           <div className="flew">
                             <div> {index + 1}</div>
-                            <input className="check" type="checkbox" checked={todo.completed} />
+                            <input
+                              className="check"
+                              type="checkbox"
+                              checked={todo.completed}
+                            />
                             <div className="inner-todo">{todo} </div>
 
                             <div className="edit-delete-btn">
@@ -98,12 +100,18 @@ function App() {
                 </div>
               </div>
             </div>
+
             <button className="clear-all" onClick={handleClearAll}>
               Clear All Todos
             </button>
           </div>
           <div class="remaining-text">
-            {todo.filter((todo) => !todo.completed).length} Remaining Task
+            <div>
+              {todo.filter((todo) => !todo.completed).length} Remaining Task
+            </div>
+            <div>
+              {todo.filter((todo) => todo.completed).length} Task completed
+            </div>
           </div>
         </div>
       </div>
