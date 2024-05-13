@@ -1,7 +1,10 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from "uuid";
 import './App.css';
+
+
+
 
 
 function App() {
@@ -9,7 +12,10 @@ function App() {
   const[inputVal,setInputVal] =useState("");
   const [todo, SetTodo] = useState([]);
 
+  
+
   const HandleEdit =()=> {
+    
 
   }
 
@@ -23,17 +29,18 @@ function App() {
   }
 
   const HandleAdd = () => {
-    if(inputVal !== ''){
+     if(inputVal !== ''){
       SetTodo([...todo,  inputVal]);
       setInputVal('');
-    }
+     }
     
     
   }
- 
+//  console.log(todo);
  
   return (
     <>
+    
       <div className="App">
         <h1 className="head"> To-Do List </h1>
         <div className="main-div">
@@ -66,7 +73,7 @@ function App() {
                         <li key={index}>
                           <div className="flew">
                             <div> {index + 1}</div>
-                            <input className="check" type="checkbox" />
+                            <input className="check" type="checkbox" checked={todo.completed} />
                             <div className="inner-todo">{todo} </div>
 
                             <div className="edit-delete-btn">
